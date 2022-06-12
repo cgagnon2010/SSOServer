@@ -1,0 +1,5 @@
+SSO implementation using spring security for VMware Demo project. Set to local profile to run no other configs needed.
+
+In this example I have went with Springs OAuth2.0 approach, using GitHub as my resource server for simplicity. ( you can manually configure resource servers when needed doc to resource server here https://docs.spring.io/spring-security/reference/5.6.0-RC1/reactive/oauth2/resource-server.html )
+
+The local running app is by default protected, in order to log in we will re-direct to the resource server to authenticate our app, if our token matches, we will then be re-directed to our local homepage.
